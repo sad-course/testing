@@ -15,38 +15,45 @@ public class IdentifierTest {
     }
 
     @Test
-    @DisplayName("Test without starts with letter")
-    public void testIdentifierNotStartedWithLetter(){
-        assertFalse(identifier.validateIdentifier("0i"));
-    }
-
-    @Test
-    @DisplayName("Test exceeding the length ")
-    public void testIdentifierStartedWithLetterExceedingLength(){
-        assertFalse(identifier.validateIdentifier("Oiiiiii"));
+    @DisplayName("Test empty string")
+    public void testIdentifierEmpty() {
+        String identifierString = "";
+        assertFalse(identifier.validateIdentifier(identifierString));
     }
 
     @Test
     @DisplayName("Test define one character which is a digit")
     public void testIdentifierStartedWithDigitMinLength(){
-        assertFalse(identifier.validateIdentifier("0"));
+        String identifierString = "0";
+        assertFalse(identifier.validateIdentifier(identifierString));
     }
 
     @Test
     @DisplayName("Test define one character which is a letter")
     public void testIdentifierStartedWithLetterMinLength(){
-        assertTrue(identifier.validateIdentifier("O"));
+        String identifierString = "O";
+        assertTrue(identifier.validateIdentifier(identifierString));
     }
 
     @Test
-    @DisplayName("Test only letters at maximum length")
+    @DisplayName("Test define digits and letters at maximum length")
     public void testIdentifierWithOnlyLettersMaxLength(){
-        assertTrue(identifier.validateIdentifier("olalal"));
+        String identifierString = "olala2";
+        assertTrue(identifier.validateIdentifier(identifierString));
     }
 
     @Test
-    @DisplayName("Test start with letter and set digit until maximum length")
+    @DisplayName("Test define digits and letters exceeding length ")
+    public void testIdentifierWithLettersAndDigitsExceedingLength(){
+        String identifierString = "o123456";
+        assertFalse(identifier.validateIdentifier(identifierString));
+    }
+
+
+    @Test
+    @DisplayName("Test  with special characters")
     public void testIdentifierWithLettersAndDigitsUntilMaxLength(){
-        assertTrue(identifier.validateIdentifier("o12345"));
+        String identifierString = "olala!";
+        assertFalse(identifier.validateIdentifier(identifierString));
     }
 }
