@@ -14,7 +14,8 @@ Um identificador válido:
 - Pode conter apenas letras ou dígitos;
 - Deve ter de 1 a 6 caracteres de comprimento (inclusive).
 
-A função `validateIdentifier` será a função que utilizaremos nesses casos de teste, onde o retorno será True ou False (válido ou inválido).
+A função `validateIdentifier` será a função que utilizaremos nesses casos de testes, onde o retorno será True ou False, para um identificador válido
+ou inválido.
 
 ### Classes de Equivalência
 
