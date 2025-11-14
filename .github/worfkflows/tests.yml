@@ -21,5 +21,7 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Run tests
-        run: mvn -B test
+      - name: Run Tests - Identifier Program
+        run: |
+          cd identifier-program
+          mvn -B test
