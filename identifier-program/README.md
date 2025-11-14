@@ -49,4 +49,37 @@ ou inválido.
 | TC3 | testIdentifierStartedWithLetterMinLength          | CE2/CE4/VL1     | O       | True           | :white_check_mark: |
 | TC4 | testIdentifierWithOnlyLettersMaxLength            | CE2/CE4/VL2     | olala2  | True           | :white_check_mark: | 
 | TC5 | testIdentifierWithLettersAndDigitsExceedingLength | CE3/CE4/VL2     | o123456 | False          | :white_check_mark: | 
-| TC6 | testIdentifierWithLettersAndDigitsUntilMaxLength  | CE2/CE6/CE7/VL2 | olala!  | False          | :white_check_mark: | 
+| TC6 | testIdentifierWithLettersAndDigitsUntilMaxLength  | CE2/CE6/CE7/VL2 | olala!  | False          | :white_check_mark: |
+
+
+
+
+### Executando os testes
+
+É necessário ter Java >= 21 e Maven 3.9
+
+**Clone o projeto principal**
+
+```bash
+git clone https://github.com/sad-course/testing/tree/main/identifier-program
+```
+
+
+**Vá até o projeto identifier**
+```bash
+cd identifier-program
+```
+
+**Instale as dependências necessárias**
+```bash
+mvn clean install 
+```
+
+**Execute os testes**
+```bash
+mvn test 
+```
+
+
+### Resultado esperado
+![img.png](img.png)
