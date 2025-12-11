@@ -94,11 +94,14 @@ mvn test
 ```
 
 ### Relatório de Cobertura de Testes
+Os testes foram executados com o uso das bibliotecas **jUnit** e **JaCoCo** para relatório de cobertura dos testes.
+Para maior análise do relatório, acesse **target/site/jacoco/index.html** no browser.
 
 - **100% de Cobertura de Instruções**
   - Todas intruções bytecode Java foram cobertas
 - **85% de Cobertura de Branches (Ramificações de _if_ e _switch_ )**
-  - 
+  - 15% das ramificações/combinações condicionais não foram atendidas nos testes.
+
 ![img_2.png](img_2.png)
 
 ![img_1.png](img_1.png)
