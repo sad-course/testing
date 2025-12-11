@@ -80,6 +80,25 @@ mvn clean install
 mvn test 
 ```
 
+### Execução
+```
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running IdentifierTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s -- in IdentifierTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+```
 
-### Resultado esperado
-![img.png](img.png)
+### Relatório de Cobertura de Testes
+
+- **100% de Cobertura de Instruções**
+  - Todas intruções bytecode Java foram cobertas
+- **85% de Cobertura de Branches (Ramificações de _if_ e _switch_ )**
+  - 
+![img_2.png](img_2.png)
+
+![img_1.png](img_1.png)

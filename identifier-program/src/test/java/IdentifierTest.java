@@ -37,7 +37,7 @@ public class IdentifierTest {
 
     @Test
     @DisplayName("Test define digits and letters at maximum length")
-    public void testIdentifierWithOnlyLettersMaxLength(){
+    public void testIdentifierWithLettersAndDigitsMaxLength(){
         String identifierString = "olala2";
         assertTrue(identifier.validateIdentifier(identifierString));
     }
